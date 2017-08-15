@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/custom.css" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <form id="fillSurvey">
+        <h1>SURVEY FORM</h1>
+        <h4>Thanks so much for filling in this form. We have created it in order to learn more about you and meet your needs.</h4>
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input id="fullName" type="text" class="form-control" placeholder="Enter your Full Name:" name="fullName">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <input id="gender" type="text" class="form-control" placeholder="Select Gender" name="gender" :checked>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="Female">
+              Female
+          </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="Male">
+              Male
+          </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="Other">
+              Other
+          </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bornDay">Date of Birth</label>
+          <input id="bornDay" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input id="age" type="text" class="form-control" placeholder="Enter your Age:" name="age">
+        </div>
+        <div class="form-group">
+          <label for="favFood">Enter Favorite Food:</label>
+          <input id="favFood" type="text" class="form-control" placeholder="Enter your Favorite Food:" name="favFood">
+        </div>
+        <div class="form-group">
+          <label for="musicGenre">Favorite Music Genre</label>
+          <select class="form-control" id="musicGenre">
+            <option value="1">Jazz Music</option>
+            <option value="2">Folk Music</option>
+            <option value="3">Hip Hop Music</option>
+            <option value="4">Rock Music</option>
+            <option value="5">Blues</option>
+            <option value="6">Country Music</option>
+            <option value="7">Soul Music</option>
+            <option value="8">Pop Music</option>
+            <option value="9">Gospel Music</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="favColor">Select your Favorite Color:</label>
+          <input class="form-control" type="color" id="favColor">
+        </div>
+        <button type="submit" name="btn">Submit Form!</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
